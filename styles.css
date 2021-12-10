@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+}
+
+.header {
+  grid-area: hd;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: ft;
+}
+
+nav {
+  justify-content: space-evenly;
+}
+
+li {
+  display: inline;
+}
+/*# sourceMappingURL=styles.css.map */
